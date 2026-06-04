@@ -1,0 +1,60 @@
+# === PHP / Laravel de base ===
+/vendor/
+.env
+.env.backup
+.env.production
+.env.local
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea/
+/.vscode/
+/.vagrant
+
+# === Logs & caches ===
+/storage/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+/storage/app/public/*
+!storage/app/public/.gitkeep
+bootstrap/cache/*.php
+!bootstrap/cache/.gitkeep
+
+# === Sessions & temp files ===
+*.sess
+*.session
+temp/
+tmp/
+
+# === Node.js / NPM ===
+/node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === IDEs et OS ===
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# === Tests ===
+coverage/
+coverage.xml
+.phpunit.result.cache
+test-reports/
+
+ 
+
+# === Composer ===
+composer.phar
+composer.lock   # Décommenter si vous voulez ignorer le lock (débat)

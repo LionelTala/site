@@ -1,0 +1,125 @@
+.navbar-toggler {
+    border: none;
+    font-size: 2rem; /* Ajustez la taille selon vos besoins */
+    padding: 0.75rem 1.25rem; 
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    background-size: 1.5em 1.5em; /* Ajustez la taille de l'icône Hamburguer */
+}
+li{
+   padding: 10;
+}
+.perso_nav{
+   color: white;
+   font-size: 20;
+}
+.loader{
+
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color:white;
+z-index: 999999999;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.loader-out{
+display: none;
+opacity: 0;
+transition: opacity 0.4s ease-out;
+}
+
+.img1{
+    height: 500px; width:95%
+}
+.img2{
+    height: 500px;
+    width: 70%;
+}
+p{
+    width: 90%;
+}
+.bordered {
+        border: 2px solid #007bff;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .content {
+        display: flex;
+        flex-direction: row; /* Défilement horizontal par défaut */
+        align-items: center;  /* Alignement vertical */
+    }
+    .text-content {
+        flex: 1;
+        padding-right: 15px; /* Espacement entre texte et vidéo */
+    }
+    .video-container {
+        flex: 1;
+        max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column; /* Empilement vertical sur petits écrans */
+        }
+        .text-content {
+            padding-right: 0; /* Suppression de l'espacement */
+            padding-bottom: 15px; /* Ajout d'un espacement en bas */
+        }
+    }
+
+    .message {
+        position: relative;
+        padding: 10px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        max-width: 75%;
+        word-wrap: break-word;
+    }
+
+    .message.sent {
+        background-color: #e7e7e7;
+        color: black;
+        margin-left: auto;
+    }
+
+    .message.received {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .message.sent:after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent transparent #e7e7e7;
+    }
+
+    .message.received:after {
+        content: '';
+        top: 10px;
+        left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent #007bff transparent transparent;
+    }
+
+    .msg {
+        width: 60%;
+        text-align: left;
+        margin-left: -40%;
+
+    }
